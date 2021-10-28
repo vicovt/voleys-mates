@@ -1,0 +1,139 @@
+*{
+    margin: 0px;
+    padding: 0;
+  box-sizing: border-box
+}
+html {
+    background:url(../tpO/fondo_voley.jpg)  center center;
+    min-height:100%;
+    min-width: 100%;
+
+  }
+  
+  body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-image: url(../tpO/fondo_voley.jpg) center center ;
+    background-size:100px 150px;
+  }
+  .grid-container > * {
+    border-radius: 5px;
+    padding: 10px;
+   border:groove black
+  }
+  .grid-container{
+      display: grid;
+      gap: 5px;
+      grid-template:
+      "header" 100px
+      "navbar" 50px
+       "main" auto
+       "sidebar" 100px
+       "footer" 100px ;
+  }
+  .header{
+    grid-area: header;
+  }
+  .navbar{
+    grid-area: navbar;
+  }
+  .main{
+    grid-area: main;
+  }
+  .sidebar{
+    grid-area: sidebar;
+  }
+  .footer{
+    grid-area: footer;
+  }
+  @media only screen and (min-width:320px) and (max-width:1200px) {
+    .grid-container {
+      grid-template-columns: 17% auto;
+      grid-template-rows: auto;
+      grid-template-areas:
+      "header header"
+      "navbar navbar"
+      "sidebar main"
+      "footer footer";
+    }
+  }
+  
+  
+  .menu {
+    display: flex;
+   justify-content: center;
+    color: rgb(0, 0, 0);
+    gap: 200%;
+    font-size:1.2rem ;
+  }
+  .lista{
+    margin:0;
+    padding:0;
+  }
+  .lista li{
+    display:block;
+    float:left;
+    padding:0 10px;
+  }
+  li a{
+    list-style-type: none;
+   color: rgb(0, 0, 0);
+   text-decoration: none;
+  }
+  .logo{
+    height: 125%;
+    position: relative;
+    right: 40%;
+    left: 25%;
+   bottom: 15%;
+   animation: twinkle 0.5s infinite alternate;
+  }
+  #logo_r{
+    height: 125%;
+    position: relative;
+    right: 40%;
+    left: 15%;
+   bottom: 15%;
+   animation: twinkle 0.5s infinite alternate;
+  }
+  @keyframes twinkle {
+    0%{
+        opacity:.0.8;
+    }
+    100%{
+        opacity:0;
+    }
+}
+  .sidebar{
+    font-size: small;
+    padding: 0%;
+  }
+  .sidebar iframe{
+    width: 100%;
+  }
+  .rank{
+    display:block;
+    float: left;
+    padding: 0 45px;
+  }
+  .rank td{
+
+    border: solid;
+
+  }
+  .despedida{ 
+    position: relative;
+    left: 35%;
+   }
+   .main{
+     color: black;
+     font-size: medium
+   }
+   #fuente{
+     position: relative;
+     float: none;
+   }
+   .lista_reglas {
+     padding-left: 10%;
+   }
+  
+
