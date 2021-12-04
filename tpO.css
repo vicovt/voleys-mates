@@ -47,8 +47,6 @@ html {
   }
   @media screen and (device-width:480px) and (min-device-height:320px) and (min-device-height:800) {
     .grid-container {
-      grid-template-columns: 17% auto;
-      grid-template-rows: auto;
       grid-template-areas:
       "header"
       "navbar"
