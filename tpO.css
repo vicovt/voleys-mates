@@ -45,7 +45,7 @@ html {
   .footer{
     grid-area: footer;
   }
-  @media only screen and (min-width:768px) and (max-width:1024px) {
+  @media screen and (min-width:768px) and (max-width:800px) and (min-height:480px) and (min-height:1024) {
     .grid-container {
       grid-template-columns: 17% auto;
       grid-template-rows: auto;
@@ -56,7 +56,7 @@ html {
       "footer footer";
     }
   }
-  @media only screen and (min-width:320px) and (max-width:480px) {
+  @media screen and (device-width:480px) and (device-height:320px) {
     .grid-container {
       grid-template-columns: auto;
       grid-template-rows: auto;
@@ -68,9 +68,9 @@ html {
       "footer";
     }
   }
-  @media only screen (min-width: 1024px) {
+  @media screen and (device-width: 1024px) and (device-height:768px) {
     .grid-container { 
-      grid-template-columns: 20% auto;
+      grid-template-columns: 17% auto;
       grid-template-rows: auto;
       grid-template-areas:
       "header header"
