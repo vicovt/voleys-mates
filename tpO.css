@@ -45,13 +45,15 @@ html {
   .footer{
     grid-area: footer;
   }
-  @media screen and (device-width:480px) and (device-height:320px) {
+  @media screen and (min-width:320px) and (max-width:480px) and (min-height:320px) and (min-height:800) {
     .grid-container {
+      grid-template-columns: auto;
+      grid-template-rows: auto;
       grid-template-areas:
       "header"
       "navbar"
       "main"
-      "sidebar"
+      "sidebar "
       "footer";
     }
   }
