@@ -47,6 +47,7 @@ html {
   }
 @media only screen and (max-device-width: 800px){
     .grid-container {
+      grid-template-rows: auto;  
       grid-template-areas:
       "header"
       "navbar"
