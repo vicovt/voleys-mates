@@ -45,7 +45,7 @@ html {
   .footer{
     grid-area: footer;
   }
-@media screen and (device-width:480px) and (device-height:320px){
+@media only screen and (min-width: 320px) and (max-width: 736px){
     .grid-container {
       grid-template-areas:
       "header"
