@@ -14,7 +14,7 @@ html {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-image: url(fondo_voley.jpg) center center ;
     background-size:100px 150px;
-    opacity: 0.5;  
+    opacity: 0.4;  
   }
   .grid-container > * {
     border-radius: 5px;
