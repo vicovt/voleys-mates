@@ -1,166 +1,169 @@
-*{
-    margin: 0px;
-    padding: 4px;
-  box-sizing: border-box
+/* Reset de estilos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-html {
-    background:url(fondo_voley.jpg)  center center;
-    min-height:100%;
-    min-width: 100%;
-  }
-  
-  body {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-image: url(fondo_voley.jpg) center center ;
-    background-size:100px 150px; 
-  }
-  .grid-container > * {
-    border-radius: 5px;
-    padding: 10px;
-   border:groove black
-  }
-  .grid-container{
-      display: grid;
-      gap: 5px;
-      grid-template:
-      "header" 100px
-      "navbar" 50px
-       "main" auto
-       "sidebar" 125px
-       "footer" 100px ;
-  }
-  .header{
-    grid-area: header;
-  }
-  .navbar{
-    grid-area: navbar;
-  }
-  .main{
-    grid-area: main;
-  }
-  .sidebar{
-    grid-area: sidebar;
-  }
-  .footer{
-    grid-area: footer;
-  }
-@media only screen and (max-device-width: 800px){
-    .grid-container {
-      grid-template-rows: auto;  
-      grid-template-areas:
+
+/* Estilos generales para el cuerpo y HTML */
+html, body {
+  min-height: 100%;
+  min-width: 100%;
+  background: url(fondo_voley.jpg) center center;
+  background-size: cover;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: black; /* Cambio de color de texto a negro para mejorar la legibilidad */
+}
+
+/* Cuadrícula para disposición de elementos */
+.grid-container {
+  display: grid;
+  grid-template-areas:
       "header"
       "navbar"
       "main"
       "sidebar"
-      "sidebar"    
-      "sidebar"    
       "footer";
-    }
-  }
-  
-  @media screen and (min-width:768px) and (max-width:800px) and (min-height:480px) and (min-height:1024) {
-    .grid-container {
-      grid-template-columns: 17% auto;
-      grid-template-rows: auto;
-      grid-template-areas:
-      "header header"
-      "navbar navbar"
-      "sidebar main"
-      "footer footer";
-    }
-  }
-
-  @media screen and (device-width: 1024px) and (device-height:768px) {
-    .grid-container { 
-      grid-template-columns: 17% auto;
-      grid-template-rows: auto;
-      grid-template-areas:
-      "header header"
-      "navbar navbar"
-      "sidebar main"
-      "footer footer";
-    }
-  }
-  
-  .menu {
-    display: flex;
-   justify-content: center;
-    color: rgb(0, 0, 0);
-    gap: 200%;
-    font-size:1.2rem ;
-  }
-  .lista{
-    margin:0;
-    padding:0;
-  }
-  .lista li{
-    display:block;
-    float:left;
-    padding:0 10px;
-  }
-  li a{
-    list-style-type: none;
-   color: rgb(0, 0, 0);
-   text-decoration: none;
-  }
-  .logo{
-    height: 125%;
-    position: relative;
-    right: 40%;
-    left: 25%;
-   bottom: 15%;
-   animation: twinkle 0.5s infinite alternate;
-  }
-  #logo_r{
-    height: 125%;
-    position: relative;
-    right: 40%;
-    left: 15%;
-   bottom: 15%;
-   animation: twinkle 0.5s infinite alternate;
-  }
-  @keyframes twinkle {
-    0%{
-        opacity:.0.8;
-    }
-    100%{
-        opacity:0;
-    }
+  gap: 5px;
+  padding: 10px;
 }
-  .sidebar{
-    font-size: small;
-  }
-  .sidebar iframe{
-    width: 100%;
-  }
-  .rank{
-    display:block;
-    float: left;
-    padding: 0 45px;
-  }
-  .rank td{
 
-    border: solid;
+.grid-container > * {
+  border-radius: 5px;
+  padding: 10px;
+  border: groove black; /* Añadido un borde para los elementos */
+}
 
+/* Estilos para el encabezado */
+.header {
+  grid-area: header;
+}
+
+/* Estilos para la barra de navegación */
+.navbar {
+  grid-area: navbar;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  gap: 2rem; /* Espacio entre elementos del menú */
+}
+
+.lista {
+  list-style-type: none; /* Quitando los estilos de lista */
+}
+
+.lista li {
+  display: inline-block; /* Elementos del menú en línea */
+  padding: 0 10px;
+}
+
+.lista li a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+/* Estilos para la barra lateral */
+.sidebar {
+  grid-area: sidebar;
+  font-size: small;
+}
+
+.sidebar iframe {
+  width: 100%;
+}
+
+/* Estilos para el pie de página */
+.footer {
+  grid-area: footer;
+  text-align: center;
+}
+
+.footer table {
+  margin: 0 auto; /* Centrar tabla en el pie de página */
+}
+
+.footer table img {
+  width: 35px;
+  height: 35px;
+}
+
+/* Animación para el logo */
+.logo, #logo_r {
+  height: 125%;
+  position: relative;
+  right: 40%;
+  left: 25%;
+  bottom: 15%;
+  animation: twinkle 0.5s infinite alternate;
+}
+
+@keyframes twinkle {
+  0% {
+      opacity: 0.8;
   }
-  .despedida{ 
-    position: relative;
-    left: 35%;
-   }
-   .main{
-     color: black;
-     font-size: medium
-   }
-   #fuente{
-     position: relative;
-     float: none;
-   }
-   .lista_reglas {
-     padding-left: 10%;
-   }
- .logo_social{
-     width: 35px;
-     height: 35px;
-   }
+  100% {
+      opacity: 0;
+  }
+}
+
+/* Estilos específicos para la sección principal */
+.main {
+  grid-area: main;
+  color: black;
+  font-size: medium;
+}
+
+/* Ajuste para la lista de reglas */
+.lista_reglas {
+  padding-left: 10%;
+}
+
+/* Estilos específicos para la tabla de ranking */
+.rank {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px; /* Separación superior */
+}
+
+.rank th, .rank td {
+  border: 1px solid black; /* Bordes para las celdas de la tabla */
+  padding: 8px; /* Espaciado interno */
+  text-align: center; /* Alineación centrada del texto */
+}
+
+.rank th {
+  background-color: #f2f2f2; /* Color de fondo para las cabeceras */
+}
+
+/* Ajuste para elementos de formulario */
+.formulario {
+  margin: 20px; /* Margen alrededor del formulario */
+}
+
+.formulario input[type=text], .formulario input[type=email] {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.formulario input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.formulario input[type=submit]:hover {
+  background-color: #45a049;
+}
+
   
 
