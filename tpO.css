@@ -165,5 +165,51 @@ html, body {
   background-color: #45a049;
 }
 
+/* Estilos específicos para la página de blog */
+.blog-container {
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.blog-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.blog-header h1 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.blog-post {
+  margin-bottom: 20px;
+}
+
+.blog-post h2 {
+  font-size: 1.8rem;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.blog-post p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.blog-post a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+.blog-post a:hover {
+  text-decoration: underline;
+}
+
   
 
