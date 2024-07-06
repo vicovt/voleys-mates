@@ -71,7 +71,7 @@ html, body {
   font-size: small;
   position: absolute;
   left: 0;
-  top: 30%; /* Ajusta según sea necesario */
+  top: 25%; /* Ajusta según sea necesario */
   width: 35%; /* Ajusta según sea necesario */
 }
 
@@ -79,6 +79,7 @@ html, body {
 .footer {
   grid-area: footer;
   text-align: center;
+  display: flex;
 }
 
 .footer table {
@@ -114,7 +115,7 @@ html, body {
   grid-area: main;
   color: black;
   font-size: medium;
-  margin-left: 37%; /* Ajusta según sea necesario para dejar espacio para la sidebar */
+  margin-left: 35%; /* Ajusta según sea necesario para dejar espacio para la sidebar */
 }
 
 /* Ajuste para la lista de reglas */
