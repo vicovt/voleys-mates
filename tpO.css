@@ -69,6 +69,8 @@ html, body {
 .sidebar {
   grid-area: sidebar;
   font-size: small;
+  pisition: relative;
+  left: -250px;
 }
 
 .sidebar iframe {
@@ -114,6 +116,7 @@ html, body {
   grid-area: main;
   color: black;
   font-size: medium;
+  margin-left: 250px;
 }
 
 /* Ajuste para la lista de reglas */
