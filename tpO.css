@@ -71,8 +71,8 @@ html, body {
   font-size: small;
   position: absolute;
   left: 0;
-  top: 10%; /* Ajusta según sea necesario */
-  width: 20%; /* Ajusta según sea necesario */
+  top: 15%; /* Ajusta según sea necesario */
+  width: 30%; /* Ajusta según sea necesario */
 }
 
 /* Estilos para el pie de página */
