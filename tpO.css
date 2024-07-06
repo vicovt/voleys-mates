@@ -21,8 +21,7 @@ html, body {
   grid-template-areas:
       "header"
       "navbar"
-      "main"
-      "sidebar"
+      "sidebar""main"   
       "footer";
   gap: 5px;
   padding: 10px;
