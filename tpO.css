@@ -73,15 +73,15 @@ html, body {
   left: 0;
   top: 25%; /* Ajusta según sea necesario */
   width: 35%; /* Ajusta según sea necesario */
-  height: 70%
+  height: 65%
 }
 
 /* Estilos para el pie de página */
 .footer {
   grid-area: footer;
-  text-align: center;
   display: flex;
   justify-content: center;
+  text-align: center;
   gap: 20px
 }
 
