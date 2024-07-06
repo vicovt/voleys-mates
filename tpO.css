@@ -71,8 +71,8 @@ html, body {
   font-size: small;
   position: absolute;
   left: 0;
-  top: 15%; /* Ajusta según sea necesario */
-  width: 30%; /* Ajusta según sea necesario */
+  top: 30%; /* Ajusta según sea necesario */
+  width: 35%; /* Ajusta según sea necesario */
 }
 
 /* Estilos para el pie de página */
@@ -114,7 +114,7 @@ html, body {
   grid-area: main;
   color: black;
   font-size: medium;
-  margin-left: 22%; /* Ajusta según sea necesario para dejar espacio para la sidebar */
+  margin-left: 37%; /* Ajusta según sea necesario para dejar espacio para la sidebar */
 }
 
 /* Ajuste para la lista de reglas */
