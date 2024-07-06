@@ -17,13 +17,8 @@ html, body {
 
 /* Cuadrícula para disposición de elementos */
 .grid-container {
-  display: grid;
-  grid-template-areas:
-      "header"
-      "navbar"
-      "sidebar main"   
-      "footer footer";
-  grid-template-columns: 250px 1fr;
+  display: flex;
+  flex-direction: column;
   gap: 5px;
   padding: 10px;
 }
@@ -36,12 +31,12 @@ html, body {
 
 /* Estilos para el encabezado */
 .header {
-  grid-area: header;
+  order: 1;
 }
 
 /* Estilos para la barra de navegación */
 .navbar {
-  grid-area: navbar;
+  order: 2;
 }
 
 .menu {
@@ -64,17 +59,22 @@ html, body {
   text-decoration: none;
   font-size: 1.2rem;
 }
+.content{
+  display:flex;
+  order:3;
+  gap: 5px;
+}
 
 /* Estilos para la barra lateral */
 .sidebar {
-  grid-area: sidebar;
+  flex: 1;
   font-size: small;
 }
 
 
 /* Estilos para el pie de página */
 .footer {
-  grid-area: footer;
+  order: 4;
   text-align: center;
 }
 
@@ -108,10 +108,8 @@ html, body {
 
 /* Estilos específicos para la sección principal */
 .main {
-  grid-area: main;
-  color: black;
-  font-size: medium;
-  margin-left: 250px;
+  flex: 3;
+  text-align: center;
 }
 
 /* Ajuste para la lista de reglas */
