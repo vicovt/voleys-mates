@@ -1,4 +1,4 @@
-/* Reset de estilos */
+ /* Reset de estilos */
 * {
   margin: 0;
   padding: 0;
@@ -17,8 +17,13 @@ html, body {
 
 /* Cuadrícula para disposición de elementos */
 .grid-container {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-areas:
+      "header"
+      "navbar"
+      "main"
+      "sidebar"
+      "footer";
   gap: 5px;
   padding: 10px;
 }
@@ -31,12 +36,12 @@ html, body {
 
 /* Estilos para el encabezado */
 .header {
-  order: 1;
+  grid-area: header;
 }
 
 /* Estilos para la barra de navegación */
 .navbar {
-  order: 2;
+  grid-area: navbar;
 }
 
 .menu {
@@ -59,22 +64,20 @@ html, body {
   text-decoration: none;
   font-size: 1.2rem;
 }
-.content{
-  display:flex;
-  order:3;
-  gap: 5px;
-}
 
 /* Estilos para la barra lateral */
 .sidebar {
-  flex: 1;
+  grid-area: sidebar;
   font-size: small;
+  position: absolute;
+  left: 0;
+  top: 10%; /* Ajusta según sea necesario */
+  width: 20%; /* Ajusta según sea necesario */
 }
-
 
 /* Estilos para el pie de página */
 .footer {
-  order: 4;
+  grid-area: footer;
   text-align: center;
 }
 
@@ -108,8 +111,10 @@ html, body {
 
 /* Estilos específicos para la sección principal */
 .main {
-  flex: 3;
-  text-align: center;
+  grid-area: main;
+  color: black;
+  font-size: medium;
+  margin-left: 22%; /* Ajusta según sea necesario para dejar espacio para la sidebar */
 }
 
 /* Ajuste para la lista de reglas */
@@ -160,52 +165,3 @@ html, body {
 .formulario input[type=submit]:hover {
   background-color: #45a049;
 }
-
-/* Estilos específicos para la página de blog */
-.blog-container {
-  max-width: 800px;
-  margin: 20px auto;
-  background-color: white;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.blog-header {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.blog-header h1 {
-  font-size: 2.5rem;
-  color: #333;
-}
-
-.blog-post {
-  margin-bottom: 20px;
-}
-
-.blog-post h2 {
-  font-size: 1.8rem;
-  color: #444;
-  margin-bottom: 10px;
-}
-
-.blog-post p {
-  font-size: 1rem;
-  line-height: 1.6;
-  color: #666;
-  margin-bottom: 10px;
-}
-
-.blog-post a {
-  color: #007BFF;
-  text-decoration: none;
-}
-
-.blog-post a:hover {
-  text-decoration: underline;
-}
-
-  
-
