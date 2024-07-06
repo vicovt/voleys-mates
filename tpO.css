@@ -73,10 +73,6 @@ html, body {
   left: -250px;
 }
 
-.sidebar iframe {
-  width: 100%;
-}
-
 /* Estilos para el pie de página */
 .footer {
   grid-area: footer;
